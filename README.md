@@ -1,46 +1,41 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Upustvo za pokretanje
 
-## Available Scripts
+Za pokretanje projekta potrebno je sve repozitorije iz organizacije [ChatAppO](https://github.com/ChatAppO) klonirati u isti direktorij.
+Nakon ovoga se treba pozicionirati u direktorij frontend. Unutar ovoga direktorija je potrebno izvršiti sljedeću komandu:
 
-In the project directory, you can run:
+```bash
+$ ./run.sh 
+```
+Ona će uraditi build svih aplikacija i pokrenuti sve aplikacije unutar docker containera.
+Kada su se uspješno pokrenuli frontend i backend možemo otvoriti frontend na http://localhost:3000/
 
-### `npm start`
+## Opis aplikacije
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Prilikom otvaranja frontenda na http://localhost:3000/ dobit ćemo generisano ime koje će biti prikazano **boldirano** u listi aktivnih korisnika.
+Unutar ove liste **aktivnih korisnika** možemo vidjeti sve osobe koje trenutno koriste aplikaciju. Klikom na nekog od aktivnih korisnika otvara nam se chat sa tom osobom i imamo mogućnost slanja poruka.
+Sa lijeve strane imamo prozor **messages** u kojem vidimo osobe sa kojima smo komunicirali kao i globalni chat.
+Također klikom na osobu ili globalni chat iz prozora messages otvara nam se taj chat kao što se otvara i klikom na aktivnog korisnika iz liste aktivnih korisnika.
+Unutar prozora messages aktivni korisnici imaju **zeleni krug**, dok neaktivni korisnici imaju **crveni krug**.
+Također, unutar prozora messages se prikazuje samo zadnja poruka vezana za određeni chat, a ukoliko želimo vidjeti sve poruke onda moramo otvoriti taj chat klikom na njega.
+Imamo mogućnost pregleda svih globalnih poruka bez obzira kad smo prijavljeni, a također imamo mogućnost gledanja **historije poruka** i sa aktivnim i sa neaktivnim korisnicima.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Način izrade aplikacije
 
-### `npm test`
+- Čitanje postavljenih zahtjeva te razmišljanje o rješenju
+- Istraživanje komunikacije u realnom vremenu
+- Učenje o websocketima
+- Smišljanje plana za izradu, osmišljen način komunikacije
+- Traženje ideja za izgled frontenda na figmi. Iskorištena ideja sa modifikacijama prema potrebi zadatka : https://www.figma.com/community/file/1106649794153342244
+- Postavljanje backenda
+- Postavljanje frontenda
+- Sređivanje servera uz testiranje komunikacije sa websocketima putem postmana
+- Postavljanje defaultnih elemenata na frontendu(prikaz imena, input za poruke, dugme za slanje...) i spajanje sa backendom
+- Nakon uspješno uspostavljene komunikacije prelazak na dizajn
+- Ručno testiranje frontenda i backenda
+- Priprema docker containera
+- Testiranje kompletne aplikacije pokrenute preko navedene komande u upustvu za pokretanje.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Autor
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Autor - Belmin Selimović

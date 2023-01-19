@@ -1,0 +1,42 @@
+.activeUsersWrapper{
+  padding: 4px 4px;
+  height: 110px;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.activeUsersContainer{
+  display: flex;
+  height: 92px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  @media screen and (min-width: 310px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 500px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 650px) {
+    width: 600px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 950px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1000px;
+  }
+}
+
+.activeUserName {
+  text-align: center;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000;
+  margin: 0;
+}

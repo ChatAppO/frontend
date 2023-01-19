@@ -1,0 +1,20 @@
+.inputWrapper{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 4px;
+  color:#fff;
+  border: 1px solid #eae8e8;
+  //box-shadow: 4px 1px 8px 1px rgba(0,0,0,0.25);
+  border-radius: 10px;
+  @media screen and (min-width: 300px) {
+    width: 98%;
+  }
+  @media screen and (min-width: 650px) {
+    width: 98%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 98%;
+  }
+}

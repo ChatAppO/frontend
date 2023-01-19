@@ -1,0 +1,33 @@
+.sendMessageWrapper{
+    width: 280px;
+    height: fit-content;
+    padding: 10px 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.receiveMessageWrapper{
+    width: 280px;
+    height: fit-content;
+    padding: 10px 10px;
+    background-color: deepskyblue;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.sendText{
+    margin: 0;
+    color: #191D1E;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+}
+
+.receiveText{
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+}

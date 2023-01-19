@@ -1,0 +1,30 @@
+.homeWrapper{
+  padding: 40px 0 0 0;
+  width: fit-content;
+  margin: 0 auto;
+  @media screen and (min-width: 310px) {
+    padding: 10px 0 0 0;
+  }
+}
+
+.elementsContainer{
+  display: flex;
+  gap:10px;
+  //justify-content: center;
+
+  @media screen and (min-width: 280px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+}
+
+.chatWithInput {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}

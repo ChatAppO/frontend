@@ -1,0 +1,23 @@
+.button{
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border:none;
+  border-radius: 8px;
+  background-color: deepskyblue;
+  color:#fff;
+  box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.25);
+  @media screen and (min-width: 300px) {
+    width: 60px;
+  }
+  @media screen and (min-width: 650px) {
+    width: 80px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 100px;
+  }
+}
+
+.button:hover{
+  background-color: #60cff8;
+}

@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  backend:
+    image: chatapp-backend
+    container_name: backend
+    build:
+      context: ../backend
+    ports:
+      - 3001:3001
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 5
+    networks:
+      - chatapp
+  frontend:
+    image: chatapp-frontend
+    container_name: frontend
+    restart: on-failure
+    build:
+      context: /
+    ports:
+      - 3000:3000
+    networks:
+      - chatapp
+networks:
+  chatapp:
+    driver: bridge
